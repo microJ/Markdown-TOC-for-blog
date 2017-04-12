@@ -1,0 +1,28 @@
+
+.container{
+    padding: 0 25%;
+}
+
+
+/*TOC部分*/
+
+#mdTocNav{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    /*width: 200px;*/
+    border-radius: .5em;
+    background: #eee;
+
+}
+#mdTocNav ul,#mdTocNav ol{
+    padding: 0 10px;
+    list-style-type: none;
+}
+#mdTocNav li{
+    line-height: 1.8;
+}
+#mdTocNav ol li a{
+    /*text-decoration: none;*/
+    color: #444;
+}
