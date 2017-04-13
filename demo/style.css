@@ -8,21 +8,51 @@
 
 #mdTocNav{
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 10px;
     /*width: 200px;*/
     border-radius: .5em;
     background: #eee;
-
-}
-#mdTocNav ul,#mdTocNav ol{
-    padding: 0 10px;
     list-style-type: none;
+    padding: 10px;
 }
+
 #mdTocNav li{
     line-height: 1.8;
 }
-#mdTocNav ol li a{
-    /*text-decoration: none;*/
-    color: #444;
+
+.mdh2{
+    padding: 0.2em 0 0;
+}
+.mdh3 {
+     padding: 0 .5em;
+ }
+.mdh4 {
+    padding: 0 1em;
+}
+.mdh5 {
+    padding: 0 1.5em;
+}
+.mdh6 {
+    padding: 0 2em;
+}
+
+#mdTocNav a{
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+
+}
+.mdh2 a{
+    color: #333;
+}
+
+.nav-number{
+    margin-right: .5em;
+    color: #999;
+}
+.mdh2 .nav-number{
+    margin-right: 0.8em;
+}
+.nav-text{
 }
