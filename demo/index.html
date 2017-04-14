@@ -9,7 +9,7 @@
 <div class="container" id="main">
     <h1>一级标题</h1>
 
-    <h2 id="标题1">二级标题1</h2>
+    <h2 id="xxx">二级标题10010</h2>
 
     <p>这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落</p>
         <h3>3级标题</h3>
@@ -17,7 +17,7 @@
     <p>这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落这里是段落</p>
         <h3>3级标题</h3>
 
-    <h2 id="标题2">二级标题2</h2>
+    <h2 id="absc">二级标题2</h2>
         <h3>3级标题</h3>
             <h4>4级标题</h4>
             <h4>4级标题</h4>
@@ -25,13 +25,13 @@
         <h3>3级标题</h3>
             <h4>4级标题</h4>
             <h4>4级标题</h4>
-    <h2 id="标题3">二级标题3</h2>
+    <h2 id="sss">二级标题3</h2>
     <p>这</p>
     <p>里</p>
     <p>是</p>
     <p>内</p>
     <p>容</p>
-    <h2 id="标题4">二级标题4</h2>
+    <h2 id="fff">二级标题4</h2>
     <p>这</p>
     <p>里</p>
     <p>是</p>
@@ -40,7 +40,7 @@
 </div>
 
 
-    <ol id="mdTocNav">
+    <!--<ol id="mdTocNav-">
         <li class="mdh2"><a href="#标题1"><span class="nav-number">1</span><span class="nav-text">这里是标题1</span></a></li>
 
             <li class="mdh3">
@@ -69,13 +69,16 @@
         <li class="mdh2"><a href="#标题4"><span class="nav-number">4</span><span class="nav-text">这里是标题4</span></a></li>
         <li class="mdh2"><a href="#标题5"><span class="nav-number">5</span><span class="nav-text">这里是标题5</span></a></li>
     </ol>
+-->
 
 
-
-<!--<script src="mdTocNav.js"></script>-->
-<script src="md-toc.js"></script>
+<script src="mdTocNav.js"></script>
+<!--<script src="md-toc.js"></script>-->
 <script>
-    new Toc('main',{level:3,})
+//    new Toc('main',{level:3,})
+    console.profile('mdTocNav 性能测试')
+    var a = new MdTOCNav()
+    console.profileEnd()
 </script>
 </body>
 </html>
