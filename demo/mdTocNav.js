@@ -31,7 +31,7 @@
             //遍历数组获取相关信息
             for (var i = 0; i < this.rootArea.children.length; i++) {
                 var tagName = this.rootArea.children[i].tagName
-                for (var x=0;x<this.levelBoolean.length;x++) {
+                for (var x = 0; x < this.levelBoolean.length; x++) {
                     if (this.levelBoolean[x] === tagName) {
                         var that = this
                         // 此时x与h1~6建立联系
@@ -39,15 +39,14 @@
                             className: 'mdh' + (x + 2),
                             serialNum: (function (that) {
                                 that.levelCount[x]++
-                                that.levelCount.splice(x+1,that.levelCount.length-x,0,0,0,0,0,0)    //上一层的计数变化时重置之后的计数
-                                // that.levelCount.newArr = that.levelCount.slice(0, x + 1)
+                                that.levelCount.splice(x + 1, that.levelCount.length - x -1, 0, 0, 0, 0, 0)    //上一层的计数变化时重置之后的计数
                                 return that.levelCount.slice(0, x + 1).join('.')    //截取对应的编号应该有的数字，并转化为字符串
                             })(that),
                             targetId: 'mdTocNav' + this.newTocData.serialNum,
                             text: this.rootArea.children[i].innerText
                         }
                         this.tocDataArr.push(this.newTocData)
-                        this.rootArea.children[i].id +=  (this.rootArea.children[i].id ? ' ' : '') + this.newTocData.targetId
+                        this.rootArea.children[i].id += (this.rootArea.children[i].id ? ' ' : '') + this.newTocData.targetId
                     }
 
                 }
@@ -78,54 +77,3 @@
     window.MdTOCNav = MdTOCNav
 
 })(window)
-
-//
-// window.onload = function () {
-//
-//
-//
-//     //获取标题的区域
-//     var rootArea = document.getElementById(a.el) || document.body
-//
-//     var mdTocNav = document.createElement('ol')
-//     mdTocNav.setAttribute('id', 'mdTocNav')
-//     console.log(mdTocNav)
-//     console.log(rootArea)
-//
-// //每个单元模块中的变量是：编号serialNum、名称header
-//
-// //创建h2列表结构
-//     var h2ol = '<ol class="mdh2">' + +'</ol>'
-//
-// //存放所有数据的数组 allLis
-//     var allLis = []
-//
-// //放入h2
-//     var h2ls = rootArea.getElementsByTagName('h2')
-//     for (var i = 0; i < h2ls.length; i++) {
-//
-//     }
-//
-// }
-//
-//
-// function getHn(n, fatherArea) {
-//     //传入参数代表 H1~H6 中的数字
-//     if (n < 1 && n > 6) {
-//         return false
-//     }
-//     // fatherArea = fatherArea || rootArea
-//     return fatherArea.getElementsByTagName('h' + n)
-// }
-//
-// // 定义li标签的基本结构，参数：编号serialNum、名称header
-// function setLi(mdhNum, serialNum, header) {
-//     return '<li class="' + mdhNum + '">' +
-//         '<a href="#' + header + '">' +
-//         '<span class="nav-number">' + serialNum + '</span>' +
-//         '<span class="nav-text">' + header + '</span>' +
-//         '</a>' +
-//         '</li>'
-// }
-//
-// var a = new MdTOCNav({el: 'main'})
