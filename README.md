@@ -1,7 +1,5 @@
 # Markdown-TOC-for-blog
 create TOC for blog published with markdown-syntax.
 
-- [ ] 待办1
-- [ ] 待办2
-
-这里是一些修改
+- [x] 动态生成TOC
+- [ ] 点击跳转锚点效果
