@@ -16,13 +16,16 @@ TODO：
 
 ## 如何使用：
 
-默认：  
+- 默认：
+
 `new MdTOCNav()`
 
-选取id标识符为'blogMain'的区域：  
+- 选取id标识符为'blogMain'的区域：  
+
 `new MdTOCNav({el: 'blogMain'})`
 
-修改展示层级到h5：  
+- 修改展示层级到h5：  
+
 `new MdTOCNav({level: 5})`  
 实际上不推荐这么做，标题层级太多不好看2333
 
