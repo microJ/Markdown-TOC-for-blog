@@ -4,13 +4,17 @@
 }
 
 
+
 /*TOC部分*/
 
 #mdTocNav{
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 10px;
-    /*width: 200px;*/
+    width: 200px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
     border-radius: .5em;
     background: #eee;
     list-style-type: none;
@@ -41,7 +45,6 @@
     color: #666;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
-
 }
 .mdh2 a{
     color: #333;
@@ -54,5 +57,6 @@
 .mdh2 .nav-number{
     margin-right: 0.8em;
 }
-.nav-text{
+span.nav-text {
+    white-space: nowrap;
 }

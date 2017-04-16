@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 <body>
-<div class="container" id="main">
+<div class="container" id="main" style="padding: 0 25%;">
     <h1>一级标题</h1>
 
     <h2 id="xxx">二级标题10010</h2>
@@ -57,11 +57,13 @@
 
 <script src="mdTocNav.js"></script>
 
-<script>
+<!--<script>
 
-    console.profile('mdTocNav 性能测试')
-    var a = new MdTOCNav()
-    console.profileEnd()
-</script>
+    window.j_ready(function () {
+        console.profile('mdTocNav 性能测试')
+        var a = new MdTOCNav()
+        console.profileEnd()
+    })
+</script>-->
 </body>
 </html>

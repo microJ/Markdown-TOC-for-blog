@@ -8,10 +8,6 @@ create TOC for blog published with markdown-syntax.
 - 点击标题会在页面中自动定位到相应位置。
 
 
-TODO：
-> - [x] 动态生成TOC
-> - [ ] 点击跳转锚点效果
-
 ## 如何使用：
 
 包含两个可选参数：
@@ -28,3 +24,8 @@ TODO：
 `new MdTOCNav({level: 5})`  
 实际上不推荐这么做，标题层级太多不好看2333
 
+
+
+TODO：
+> - [x] 动态生成TOC
+> - [ ] 点击跳转锚点效果>
