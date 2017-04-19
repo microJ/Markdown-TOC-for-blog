@@ -27,6 +27,6 @@ create TOC for blog published with markdown-syntax.
 
 
 TODO：
-> - [x] 动态生成TOC
+> - [x] DOM结构加载完就动态生成TOC
 > - [ ] 精细化TOC的样式
 > - [ ] 点击跳转锚点效果>
